@@ -9,6 +9,9 @@ gem "rails", "~> 7.0.8"
 #for user authentication
 gem "devise", "~> 4.9"
 
+#to send inviatation email to register with our system
+gem 'devise_invitable', '~> 2.0.0'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -75,5 +78,3 @@ group :test do
   gem "selenium-webdriver"
 
 end
-
-gem 'devise_invitable', '~> 2.0.0'
