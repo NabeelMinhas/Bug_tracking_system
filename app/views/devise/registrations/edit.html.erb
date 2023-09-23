@@ -15,7 +15,7 @@
 
   <div class="field">
     <%= f.label :user_category %><br />
-    <%= f.select :user_category, User::USER_CATEGORY, autofocus: true, autocomplete: "user_category" %>
+    <%= f.select :user_category, user_category_options, autofocus: true, autocomplete: "user_category" %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
